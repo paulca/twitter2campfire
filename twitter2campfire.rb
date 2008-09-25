@@ -26,6 +26,7 @@ class Twitter2Campfire
   end
   
   def save_latest
+    archive_file << ''
     archive_file << latest_tweet.date.to_s
   end
   
@@ -39,7 +40,7 @@ class Twitter2Campfire
   end
   
   def posts
-    entries.reject { |e| e.date.to_i < archived_latest_date.to_i }
+    entries.reject { |e| e.date.to_i <= archived_latest_date.to_i }
   end
   
   def publish_entries
