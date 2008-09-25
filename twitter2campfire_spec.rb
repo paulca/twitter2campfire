@@ -16,4 +16,8 @@ describe Twitter2Campfire do
   it "should get the latest entry" do
     (@t.raw_feed/'entry').first.should == 'stuff'
   end
+  
+  it "should get the archived latest" do
+    @t.archived_latest.should == 'test'
+  end
 end

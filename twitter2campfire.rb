@@ -20,6 +20,10 @@ class Twitter2Campfire
     (raw_feed/'entry').map { |e| OpenStruct.new(:from => (e/'name').inner_html, :text => (e/'title').inner_html, :link => (e/'link').first['href']) }
   end
   
+  def new?
+    archived_latest == latest_tweet.text
+  end
+  
   def latest_tweet
     entries.first
   end
@@ -34,11 +38,12 @@ class Twitter2Campfire
   
   def archived_latest
     archive_file >> (string ||= "")
+    string.strip
   end
   
   def publish_entries
+    return unless new?
     entries.reverse.each do |entry|
-      return if entry.text == archived_latest
       room.speak "#{entry.from}: #{entry.text} #{entry.link}"
     end
     save_latest
