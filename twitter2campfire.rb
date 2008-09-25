@@ -39,11 +39,10 @@ class Twitter2Campfire
   end
   
   def posts
-    entries.map { |e| e.date.to_i > archived_latest_date.to_i }
+    entries.reject { |e| e.date.to_i < archived_latest_date.to_i }
   end
   
   def publish_entries
-    posts = []
     posts.reverse.each do |post|
       puts post
     end
