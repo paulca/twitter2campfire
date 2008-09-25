@@ -21,7 +21,7 @@ class Twitter2Campfire
   end
   
   def new?
-    archived_latest == latest_tweet.text
+    archived_latest.strip == latest_tweet.text.strip
   end
   
   def latest_tweet
@@ -38,7 +38,7 @@ class Twitter2Campfire
   
   def archived_latest
     archive_file >> (string ||= "")
-    string.strip
+    string
   end
   
   def publish_entries
