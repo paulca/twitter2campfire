@@ -45,7 +45,7 @@ class Twitter2Campfire
   
   def publish_entries
     posts.reverse.each do |post|
-      puts post
+      room.speak post
     end
     save_latest
   end
