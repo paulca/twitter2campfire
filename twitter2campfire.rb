@@ -26,7 +26,7 @@ class Twitter2Campfire
   end
   
   def save_latest
-    archive_file << ''
+    archive_file.truncate
     archive_file << latest_tweet.date.to_s
   end
   
