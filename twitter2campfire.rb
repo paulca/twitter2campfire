@@ -4,13 +4,15 @@ require 'rio'
 require 'hpricot'
 require 'ostruct'
 require 'time'
+require 'htmlentities'
 
 class Twitter2Campfire
-  attr_accessor :feed, :campfire, :room
-  def initialize(feed,campfire,room)
+  attr_accessor :feed, :campfire, :room, :cachefile
+  def initialize(feed,campfire,room, cachefile = 'archived_latest.txt')
     self.feed = feed
     self.campfire = campfire
     self.room = campfire.find_room_by_name room
+    self.cachefile = cachefile
   end
   
   def raw_feed
@@ -31,7 +33,7 @@ class Twitter2Campfire
   end
   
   def archive_file
-    rio('archived_latest.txt')
+    rio(cachefile)
   end
   
   def archived_latest_date
@@ -43,9 +45,13 @@ class Twitter2Campfire
     entries.reject { |e| e.date.to_i <= archived_latest_date.to_i }
   end
   
+  def coder
+    HTMLEntities.new
+  end
+  
   def publish_entries
     posts.reverse.each do |post|
-      room.speak "#{post.from}: #{post.text} #{post.link}"
+      room.speak "#{post.from}: #{coder.decode(post.text)} #{post.link}"
     end
     save_latest
   end
