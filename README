@@ -6,6 +6,12 @@ This script allows you to monitor a Twitter search feed using Campfire.
 
 Here's how to get it set up:
 
+Pre-run: make sure to install gem dependencies:
+
+sudo gem install tinder rio hpricot htmlentities
+
+then:
+
 1) Check out the repo:
 
 git://github.com/paulca/twitter2campfire.git
@@ -16,4 +22,4 @@ git://github.com/paulca/twitter2campfire.git
 
 * * * * * cd /home/twitter2campfire/; ruby run.rb
 
-Hallelujah, you got Twitter in your Campfire!
+Hallelujah, you got Twitter in your Campfire, sweet!
