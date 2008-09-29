@@ -21,9 +21,4 @@ describe Twitter2Campfire do
     @t.archived_latest_date.should == 'test'
   end
   
-  describe "with a few mock entries" do
-    before(:each) do
-      @t.stub1(:)
-    end
-  end
 end
