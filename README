@@ -2,18 +2,18 @@ twitter2campfire.rb
 
 Publish a Twitter summize feed to Campfire
 
-feed = any summize feed
-campfire = a Tinder campfire object ( eg. campfire = Tinder::Campfire.new app.campfire_subdomain and campfire.login 'your login', 'your password' )
-room = the name of the room you want to publish to
+This script allows you to monitor a Twitter search feed using Campfire.
 
-usage
+Here's how to get it set up:
 
-t = Twitter2Campfire.new(feed_url, tinder_campfire_object, room_name)
-t.publish_entries
+1) Check out the repo:
 
-The latest entry is cached in archived_latest.txt to avoid reposting.
+git://github.com/paulca/twitter2campfire.git
 
-You'll need tinder, rio and hpricot
-sudo gem install tinder rio hpricot
+2) Edit 'run.rb' with your credentials
 
-Huzzah.
+3) Set a cron script to run the script every minute. Something like this should do it:
+
+* * * * * cd /home/twitter2campfire/; ruby run.rb
+
+Hallelujah, you got Twitter in your Campfire!
