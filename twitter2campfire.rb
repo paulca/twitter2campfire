@@ -51,7 +51,7 @@ class Twitter2Campfire
   
   def publish_entries
     posts.reverse.each do |post|
-      room.speak "#{post.from}: #{coder.decode(post.text)} #{post.link}"
+      room.speak "#{coder.decode(post.from)}: #{coder.decode(post.text)} #{post.link}"
     end
     save_latest
   end
