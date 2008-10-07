@@ -14,7 +14,7 @@ then:
 
 1) Check out the repo:
 
-git://github.com/paulca/twitter2campfire.git
+git clone git://github.com/paulca/twitter2campfire.git
 
 2) Edit 'run.rb' with your credentials
 
