@@ -16,7 +16,7 @@ then:
 
 git clone git://github.com/paulca/twitter2campfire.git
 
-2) Edit 'run.rb' with your credentials
+2) Edit 'run.rb' with your credentials and a feed url ( from http://search.twitter.com )
 
 3) Set a cron script to run the script every minute. Something like this should do it:
 
