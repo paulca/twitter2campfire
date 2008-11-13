@@ -20,7 +20,7 @@ class Twitter2Campfire
   end
   
   def entries
-    (raw_feed/'entry').map { |e| OpenStruct.new(:from => (e/'name').inner_html, :text => (e/'title').inner_html, :link => (e/'link').first['href'], :date => Time.parse((e/'published').inner_html)) }
+    (raw_feed/'entry').map { |e| OpenStruct.new(:from => (e/'name').inner_html, :text => (e/'title').inner_html, :link => (e/'link').first['href'], :date => Time.parse((e/'updated').inner_html)) }
   end
   
   def latest_tweet
