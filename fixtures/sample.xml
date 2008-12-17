@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns:google="http://base.google.com/ns/1.0" xml:lang="en-US" xmlns:openSearch="http://a9.com/-/spec/opensearch/1.1/" xmlns="http://www.w3.org/2005/Atom" xmlns:twitter="http://api.twitter.com/">
+  <id>tag:search.twitter.com,2005:search/from:paulca OR from:eoghanmccabe OR from:destraynor OR from:davidjrice</id>
+  <link type="text/html" rel="alternate" href="http://search.twitter.com/search?q=from%3Apaulca+OR+from%3Aeoghanmccabe+OR+from%3Adestraynor+OR+from%3Adavidjrice"/>
+  <link type="application/atom+xml" rel="self" href="http://search.twitter.com/search.atom?q=from%3Apaulca+OR+from%3Aeoghanmccabe+OR+from%3Adestraynor+OR+from%3Adavidjrice"/>
+  <title>from:paulca OR from:eoghanmccabe OR from:destraynor OR from:davidjrice - Twitter Search</title>
+  <link type="application/opensearchdescription+xml" rel="search" href="http://search.twitter.com/opensearch.xml"/>
+  <link type="application/atom+xml" rel="refresh" href="http://search.twitter.com/search.atom?q=from%3Apaulca+OR+from%3Aeoghanmccabe+OR+from%3Adestraynor+OR+from%3Adavidjrice&amp;since_id=1062620135"/>
+  <updated>2008-12-17T12:12:01Z</updated>
+  <openSearch:itemsPerPage>15</openSearch:itemsPerPage>
+  <link type="application/atom+xml" rel="next" href="http://search.twitter.com/search.atom?max_id=1062620135&amp;page=2&amp;q=from%3Apaulca+OR+from%3Aeoghanmccabe+OR+from%3Adestraynor+OR+from%3Adavidjrice"/>
+  <entry>
+    <id>tag:search.twitter.com,2005:1062620135</id>
+    <published>2008-12-17T12:12:01Z</published>
+    <link type="text/html" rel="alternate" href="http://twitter.com/paulca/statuses/1062620135"/>
+    <title>@svenfuchs &#8212; I'm worried I totally missed something for merging translations ... http://reallytinyurl.com/492  ... is this useful at all?</title>
+    <content type="html">&lt;a href="http://twitter.com/svenfuchs"&gt;@svenfuchs&lt;/a&gt; &#8212; I'm worried I totally missed something for merging translations ... &lt;a href="http://reallytinyurl.com/492"&gt;http://reallytinyurl.com/492&lt;/a&gt;  ... is this useful at all?</content>
+    <updated>2008-12-17T12:12:01Z</updated>
+    <link type="image/png" rel="image" href="http://s3.amazonaws.com/twitter_production/profile_images/61449532/paul-picture_normal.png"/>
+    <author>
+      <name>paulca (Paul Campbell)</name>
+      <uri>http://twitter.com/paulca</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:1062619298</id>
+    <published>2008-12-17T12:11:11Z</published>
+    <link type="text/html" rel="alternate" href="http://twitter.com/paulca/statuses/1062619298"/>
+    <title>I wrote a little plugin to update translation files in Rails 2.2 http://reallytinyurl.com/492 Blogpost: http://reallytinyurl.com/491</title>
+    <content type="html">I wrote a little plugin to update translation files in Rails 2.2 &lt;a href="http://reallytinyurl.com/492"&gt;http://reallytinyurl.com/492&lt;/a&gt; Blogpost: &lt;a href="http://reallytinyurl.com/491"&gt;http://reallytinyurl.com/491&lt;/a&gt;</content>
+    <updated>2008-12-17T12:11:11Z</updated>
+    <link type="image/png" rel="image" href="http://s3.amazonaws.com/twitter_production/profile_images/61449532/paul-picture_normal.png"/>
+    <author>
+      <name>paulca (Paul Campbell)</name>
+      <uri>http://twitter.com/paulca</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:1062528058</id>
+    <published>2008-12-17T10:45:45Z</published>
+    <link type="text/html" rel="alternate" href="http://twitter.com/eoghanmccabe/statuses/1062528058"/>
+    <title>@karldeeter You're welcome! Glad you get the branding joke. :-)</title>
+    <content type="html">&lt;a href="http://twitter.com/karldeeter"&gt;@karldeeter&lt;/a&gt; You're welcome! Glad you get the branding joke. :-)</content>
+    <updated>2008-12-17T10:45:45Z</updated>
+    <link type="image/png" rel="image" href="http://s3.amazonaws.com/twitter_production/profile_images/61446055/eoghan-picture_normal.png"/>
+    <link type="application/atom+xml" rel="thread" href="http://search.twitter.com/search/thread/1062528058.atom"/>
+    <author>
+      <name>eoghanmccabe (Eoghan McCabe)</name>
+      <uri>http://twitter.com/eoghanmccabe</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:1062509967</id>
+    <published>2008-12-17T10:28:15Z</published>
+    <link type="text/html" rel="alternate" href="http://twitter.com/paulca/statuses/1062509967"/>
+    <title>Congrats to @campbellscott + co for successful launch of igopeople.com this morning. Great to see the lights switch on before Christmas!</title>
+    <content type="html">Congrats to &lt;a href="http://twitter.com/campbellscott"&gt;@campbellscott&lt;/a&gt; + co for successful launch of igopeople.com this morning. Great to see the lights switch on before Christmas!</content>
+    <updated>2008-12-17T10:28:15Z</updated>
+    <link type="image/png" rel="image" href="http://s3.amazonaws.com/twitter_production/profile_images/61449532/paul-picture_normal.png"/>
+    <author>
+      <name>paulca (Paul Campbell)</name>
+      <uri>http://twitter.com/paulca</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:1062447244</id>
+    <published>2008-12-17T09:20:33Z</published>
+    <link type="text/html" rel="alternate" href="http://twitter.com/destraynor/statuses/1062447244"/>
+    <title>Missing the IGO launch breakfast this morning - academia calls. Best of luck to all involved.</title>
+    <content type="html">Missing the IGO launch breakfast this morning - academia calls. Best of luck to all involved.</content>
+    <updated>2008-12-17T09:20:33Z</updated>
+    <link type="image/png" rel="image" href="http://s3.amazonaws.com/twitter_production/profile_images/61452256/des-picture_normal.png"/>
+    <author>
+      <name>destraynor (Des Traynor)</name>
+      <uri>http://twitter.com/destraynor</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:1062203697</id>
+    <published>2008-12-17T05:15:28Z</published>
+    <link type="text/html" rel="alternate" href="http://twitter.com/davidjrice/statuses/1062203697"/>
+    <title>@KirinDave I have a lumix lx1, takes great pictures. Only bad news about the lx3 is that it looks like it has time travelled from the 80s.:)</title>
+    <content type="html">&lt;a href="http://twitter.com/KirinDave"&gt;@KirinDave&lt;/a&gt; I have a lumix lx1, takes great pictures. Only bad news about the lx3 is that it looks like it has time travelled from the 80s.:)</content>
+    <updated>2008-12-17T05:15:28Z</updated>
+    <link type="image/png" rel="image" href="http://s3.amazonaws.com/twitter_production/profile_images/64037782/dave-picture_normal.png"/>
+    <author>
+      <name>davidjrice (David Rice)</name>
+      <uri>http://twitter.com/davidjrice</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:1061999348</id>
+    <published>2008-12-17T02:51:57Z</published>
+    <link type="text/html" rel="alternate" href="http://twitter.com/destraynor/statuses/1061999348"/>
+    <title>Another early start tomorrow, but it looks like I'm staring at another long sleepless night though. God this sucks.</title>
+    <content type="html">Another early start tomorrow, but it looks like I'm staring at another long sleepless night though. God this sucks.</content>
+    <updated>2008-12-17T02:51:57Z</updated>
+    <link type="image/png" rel="image" href="http://s3.amazonaws.com/twitter_production/profile_images/61452256/des-picture_normal.png"/>
+    <author>
+      <name>destraynor (Des Traynor)</name>
+      <uri>http://twitter.com/destraynor</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:1061887763</id>
+    <published>2008-12-17T01:40:04Z</published>
+    <link type="text/html" rel="alternate" href="http://twitter.com/davidjrice/statuses/1061887763"/>
+    <title>So, I was just about to do a screencast to let a client peek at their eagerly awaited facebook app... and then part of fb dies.</title>
+    <content type="html">So, I was just about to do a screencast to let a client peek at their eagerly awaited facebook app... and then part of fb dies.</content>
+    <updated>2008-12-17T01:40:04Z</updated>
+    <link type="image/png" rel="image" href="http://s3.amazonaws.com/twitter_production/profile_images/64037782/dave-picture_normal.png"/>
+    <author>
+      <name>davidjrice (David Rice)</name>
+      <uri>http://twitter.com/davidjrice</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:1061790777</id>
+    <published>2008-12-17T00:39:16Z</published>
+    <link type="text/html" rel="alternate" href="http://twitter.com/destraynor/statuses/1061790777"/>
+    <title>You'd need an evil mind to create a GMail labs plugin like "default reply to all" http://url.ie/1053 I'd say that has caused heartbreak</title>
+    <content type="html">You'd need an evil mind to create a GMail labs plugin like &amp;quot;default reply to all&amp;quot; &lt;a href="http://url.ie/1053"&gt;http://url.ie/1053&lt;/a&gt; I'd say that has caused heartbreak</content>
+    <updated>2008-12-17T00:39:16Z</updated>
+    <link type="image/png" rel="image" href="http://s3.amazonaws.com/twitter_production/profile_images/61452256/des-picture_normal.png"/>
+    <author>
+      <name>destraynor (Des Traynor)</name>
+      <uri>http://twitter.com/destraynor</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:1061702216</id>
+    <published>2008-12-16T23:44:46Z</published>
+    <link type="text/html" rel="alternate" href="http://twitter.com/paulca/statuses/1061702216"/>
+    <title>Just read Roald Dahl's short story "Taste" for first time in a few years. Origin of the world 'claret': http://reallytinyurl.com/489</title>
+    <content type="html">Just read Roald Dahl's short story &amp;quot;Taste&amp;quot; for first time in a few years. Origin of the world 'claret': &lt;a href="http://reallytinyurl.com/489"&gt;http://reallytinyurl.com/489&lt;/a&gt;</content>
+    <updated>2008-12-16T23:44:46Z</updated>
+    <link type="image/png" rel="image" href="http://s3.amazonaws.com/twitter_production/profile_images/61449532/paul-picture_normal.png"/>
+    <author>
+      <name>paulca (Paul Campbell)</name>
+      <uri>http://twitter.com/paulca</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:1061647813</id>
+    <published>2008-12-16T23:12:20Z</published>
+    <link type="text/html" rel="alternate" href="http://twitter.com/destraynor/statuses/1061647813"/>
+    <title>New Tesla does 0-60 in 3.6 seconds http://tinyurl.com/5rxhrj  It's the Lotus Elise, but faster, and friendlier</title>
+    <content type="html">New Tesla does 0-60 in 3.6 seconds &lt;a href="http://tinyurl.com/5rxhrj"&gt;http://tinyurl.com/5rxhrj&lt;/a&gt;  It's the Lotus Elise, but faster, and friendlier</content>
+    <updated>2008-12-16T23:12:20Z</updated>
+    <link type="image/png" rel="image" href="http://s3.amazonaws.com/twitter_production/profile_images/61452256/des-picture_normal.png"/>
+    <author>
+      <name>destraynor (Des Traynor)</name>
+      <uri>http://twitter.com/destraynor</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:1061542523</id>
+    <published>2008-12-16T22:13:12Z</published>
+    <link type="text/html" rel="alternate" href="http://twitter.com/destraynor/statuses/1061542523"/>
+    <title>Some nice touches on this site: http://www.corporateriskwatch.com</title>
+    <content type="html">Some nice touches on this site: &lt;a href="http://www.corporateriskwatch.com"&gt;http://www.corporateriskwatch.com&lt;/a&gt;</content>
+    <updated>2008-12-16T22:13:12Z</updated>
+    <link type="image/png" rel="image" href="http://s3.amazonaws.com/twitter_production/profile_images/61452256/des-picture_normal.png"/>
+    <author>
+      <name>destraynor (Des Traynor)</name>
+      <uri>http://twitter.com/destraynor</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:1061256927</id>
+    <published>2008-12-16T19:39:21Z</published>
+    <link type="text/html" rel="alternate" href="http://twitter.com/destraynor/statuses/1061256927"/>
+    <title>Performing a programmatic review for a computer science department in Dublin , this could be fun!</title>
+    <content type="html">Performing a programmatic review for a computer science department in Dublin , this could be fun!</content>
+    <updated>2008-12-16T19:39:21Z</updated>
+    <link type="image/png" rel="image" href="http://s3.amazonaws.com/twitter_production/profile_images/61452256/des-picture_normal.png"/>
+    <author>
+      <name>destraynor (Des Traynor)</name>
+      <uri>http://twitter.com/destraynor</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:1061081990</id>
+    <published>2008-12-16T18:07:10Z</published>
+    <link type="text/html" rel="alternate" href="http://twitter.com/destraynor/statuses/1061081990"/>
+    <title>@Padday Subscribed. Cheers</title>
+    <content type="html">&lt;a href="http://twitter.com/Padday"&gt;@Padday&lt;/a&gt; Subscribed. Cheers</content>
+    <updated>2008-12-16T18:07:10Z</updated>
+    <link type="image/png" rel="image" href="http://s3.amazonaws.com/twitter_production/profile_images/61452256/des-picture_normal.png"/>
+    <link type="application/atom+xml" rel="thread" href="http://search.twitter.com/search/thread/1061081990.atom"/>
+    <author>
+      <name>destraynor (Des Traynor)</name>
+      <uri>http://twitter.com/destraynor</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:1061077916</id>
+    <published>2008-12-16T18:05:04Z</published>
+    <link type="text/html" rel="alternate" href="http://twitter.com/destraynor/statuses/1061077916"/>
+    <title>@gizmomonster LOL that's exactly who I thought you were talking about.</title>
+    <content type="html">&lt;a href="http://twitter.com/gizmomonster"&gt;@gizmomonster&lt;/a&gt; LOL that's exactly who I thought you were talking about.</content>
+    <updated>2008-12-16T18:05:04Z</updated>
+    <link type="image/png" rel="image" href="http://s3.amazonaws.com/twitter_production/profile_images/61452256/des-picture_normal.png"/>
+    <author>
+      <name>destraynor (Des Traynor)</name>
+      <uri>http://twitter.com/destraynor</uri>
+    </author>
+  </entry>
+</feed>
