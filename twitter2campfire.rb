@@ -51,16 +51,11 @@ class Twitter2Campfire
   end
   
   def new_archive_contents
-    "#{Time.now}\n#{new_checksums.join("\n")}"
-  end
-  
-  def archived_latest_date
-    time = archive_file.split("\n")[0] ? archive_file.split("\n")[0] : '1 january 1970 00:00'
-    Time.parse(time)
+    "#{new_checksums.join("\n")}"
   end
   
   def posts
-    entries.reject { |e| e.date.to_i <= archived_latest_date.to_i or archived_checksums.include?(e.checksum) }
+    entries.reject { |e| archived_checksums.include?(e.checksum) }
   end
   
   def coder

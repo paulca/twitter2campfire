@@ -18,9 +18,6 @@ describe Twitter2Campfire, "with a cachefile" do
     ((@t.raw_feed/'entry').first/'title').first.inner_html.should match(/svenfuchs/)
   end
   
-  it "should get the archived latest" do
-    @t.archived_latest_date.should == Time.parse('19 January 1990 10:20')
-  end
   
   it "should get the archived checksums" do
     @t.archived_checksums.should == ['be7bb22cc88ff98bfd4ffe3c45ad89a7f3f4e86a', '81d405cd1e3b4bb6c959419e57c2a5c7abe688cb']
@@ -51,7 +48,7 @@ describe Twitter2Campfire, "with a cachefile" do
   end
   
   it "should save the new archive contents" do
-    @t.new_archive_contents.split("\n").size.should == 16
+    @t.new_archive_contents.split("\n").size.should == 15
   end
 end
 
@@ -69,10 +66,6 @@ describe Twitter2Campfire, "with a blank cachefile" do
   
   it "should get the latest entry" do
     ((@t.raw_feed/'entry').first/'title').first.inner_html.should match(/svenfuchs/)
-  end
-  
-  it "should get the archived latest" do
-    @t.archived_latest_date.to_date.should == Date.parse('1 jan 1970')
   end
   
   it "should get the archived checksums" do
