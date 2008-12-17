@@ -29,7 +29,7 @@ class Twitter2Campfire
   end
   
   def save_latest
-    File.open(cachfile, 'w') do |file|
+    File.open(cachefile, 'w') do |file|
       file.write(new_archive_contents)
     end
   end
