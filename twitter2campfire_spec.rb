@@ -49,6 +49,10 @@ describe Twitter2Campfire, "with a cachefile" do
   it "should have a bunch of new checksums" do
     @t.new_checksums.size.should == 15
   end
+  
+  it "should save the new archive contents" do
+    @t.new_archive_contents.split("\n").size.should == 16
+  end
 end
 
 describe Twitter2Campfire, "with a blank cachefile" do

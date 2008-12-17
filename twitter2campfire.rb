@@ -29,8 +29,9 @@ class Twitter2Campfire
   end
   
   def save_latest
-    archive_file.truncate
-    archive_file << latest_tweet.date.to_s
+    File.open(cachfile, 'w') do |file|
+      file.write(new_archive_contents)
+    end
   end
   
   def checksums
@@ -47,6 +48,10 @@ class Twitter2Campfire
   
   def archive_file
     File.read(cachefile)
+  end
+  
+  def new_archive_contents
+    "#{Time.now}\n#{new_checksums.join("\n")}"
   end
   
   def archived_latest_date
