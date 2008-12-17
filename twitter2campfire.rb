@@ -39,7 +39,7 @@ class Twitter2Campfire
   end
   
   def archived_checksums
-    archive_file.split("\n")[1,archive_file.length].to_a
+    archive_file.split("\n")
   end
   
   def new_checksums
