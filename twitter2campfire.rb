@@ -8,12 +8,14 @@ require 'htmlentities'
 require 'digest/sha1'
 
 class Twitter2Campfire
-  attr_accessor :feed, :campfire, :room, :cachefile
-  def initialize(feed,campfire,room, cachefile = 'archived_latest.txt')
+  attr_accessor :feed, :campfire, :room, :cachefile, :options
+  
+  def initialize(feed,campfire,room, cachefile = 'archived_latest.txt', options = {})
     self.feed = feed
     self.campfire = campfire
     self.room = campfire.find_room_by_name room
     self.cachefile = cachefile
+    self.options = options
   end
   
   def raw_feed
@@ -21,7 +23,16 @@ class Twitter2Campfire
   end
   
   def entries
-    (raw_feed/'entry').map { |e| OpenStruct.new(:from => (e/'name').inner_html, :text => (e/'title').inner_html, :link => (e/'link[@rel=alternate]').first['href'], :checksum => Digest::SHA1.hexdigest((e/'title').inner_html), :date => Time.parse((e/'updated').inner_html)) }
+    (raw_feed/'entry').map do |e|
+      OpenStruct.new(
+        :from => (e/'name').inner_html,
+        :text => (e/'title').inner_html,
+        :link => (e/'link[@rel=alternate]').first['href'],
+        :checksum => Digest::SHA1.hexdigest((e/'title').inner_html),
+        :date => Time.parse((e/'updated').inner_html),
+        :twicture => "http://twictur.es/i/#{(e/'id').inner_html.split(':').last}.gif"
+        )
+    end
   end
   
   def latest_tweet
@@ -64,7 +75,11 @@ class Twitter2Campfire
   
   def publish_entries
     posts.reverse.each do |post|
-      room.speak "#{coder.decode(post.from)}: #{coder.decode(post.text)} #{post.link}"
+      if options[:twicture]
+        room.speak post.twicture
+      else
+        room.speak "#{coder.decode(post.from)}: #{coder.decode(post.text)} #{post.link}"
+      end
     end
     save_latest
   end
