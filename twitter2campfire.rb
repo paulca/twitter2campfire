@@ -40,9 +40,8 @@ class Twitter2Campfire
   end
   
   def save_latest
-    File.open(cachefile, 'w') do |file|
-      file.write(new_archive_contents)
-    end
+    f = File.exist?(cachefile)? File.open(cachefile, 'w') : File.new(cachefile, 'w')
+    f.write(new_archive_contents)
   end
   
   def checksums
@@ -58,7 +57,11 @@ class Twitter2Campfire
   end
   
   def archive_file
-    File.read(cachefile)
+    begin
+      return File.read(cachefile)
+    rescue
+      ''
+    end
   end
   
   def new_archive_contents
