@@ -41,7 +41,7 @@ class Twitter2Campfire
   
   def save_latest
     f = File.exist?(cachefile)? File.open(cachefile, 'a') : File.new(cachefile, 'w')
-    f.write(new_archive_contents)
+    f.write("\n#{new_archive_contents}")
   end
   
   def checksums
@@ -81,6 +81,7 @@ class Twitter2Campfire
       if options[:twicture]
         room.speak post.twicture
       else
+        puts post.checksum
         room.speak "#{coder.decode(post.from)}: #{coder.decode(post.text)} #{post.link}"
       end
     end
