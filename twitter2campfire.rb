@@ -40,7 +40,7 @@ class Twitter2Campfire
   end
   
   def save_latest
-    f = File.exist?(cachefile)? File.open(cachefile, 'w') : File.new(cachefile, 'w')
+    f = File.exist?(cachefile)? File.open(cachefile, 'a') : File.new(cachefile, 'w')
     f.write(new_archive_contents)
   end
   
