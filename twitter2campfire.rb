@@ -53,14 +53,14 @@ class Twitter2Campfire
   end
   
   def new_checksums
-    [checksums + archived_checksums].flatten.uniq[0,1000]
+    checksums.flatten.uniq[0,1000]
   end
   
   def archive_file
     begin
       return File.read(cachefile)
-    rescue
-      ''
+    #rescue
+    #  ''
     end
   end
   
@@ -81,7 +81,6 @@ class Twitter2Campfire
       if options[:twicture]
         room.speak post.twicture
       else
-        puts post.checksum
         room.speak "#{coder.decode(post.from)}: #{coder.decode(post.text)} #{post.link}"
       end
     end
